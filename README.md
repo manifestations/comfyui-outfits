@@ -16,14 +16,23 @@ Custom ComfyUI nodes for generating outfit prompts representing diverse ethnicit
 ```
 custom_nodes/comfyui-outfits/
   ├── data/
+  │     ├── common/
+  │     ├── styles/
+  │     ├── prompts/
+  │     ├── in/
+  │     ├── id/
+  │     ├── jp/
+  │     └── ...
   ├── nodes/
   │     ├── ethnic_outfit_common.py
   │     ├── in_node.py
-  │     └── id_node.py
-  ├── styles/
-  │     └── poses.json
+  │     ├── id_node.py
+  │     ├── jp_node.py
+  │     ├── ollama_prompter.py
+  │     └── ...
   ├── __init__.py
-  └── README.md
+  ├── README.md
+  └── ...
 ```
 
 ## Installation (Custom Node)
@@ -36,10 +45,10 @@ custom_nodes/comfyui-outfits/
    - On Windows: `C:\Users\<yourname>\ComfyUI\custom_nodes\comfyui-outfits`
    - On Linux/macOS: `~/ComfyUI/custom_nodes/comfyui-outfits`
 3. Restart ComfyUI.
-4. The new nodes will appear in the ComfyUI node list under "🪄 WizDroid Ethnic Clothing Generator (IN/ID)" and "Ollama Prompter".
+4. The new nodes will appear in the ComfyUI node list under "Ethnic Outfit Generator" and "Ollama Prompter".
 
 ## Usage
-- Use the "🪄 WizDroid Ethnic Clothing Generator (IN/ID)" nodes in your workflow.
+- Use the "Ethnic Outfit Generator" nodes in your workflow.
 
 ## Adding New Regions
 1. Add new data files under `data/<region_code>/`.
