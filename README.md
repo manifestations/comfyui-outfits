@@ -45,7 +45,7 @@ custom_nodes/comfyui-outfits/
    - On Windows: `C:\Users\<yourname>\ComfyUI\custom_nodes\comfyui-outfits`
    - On Linux/macOS: `~/ComfyUI/custom_nodes/comfyui-outfits`
 3. Restart ComfyUI.
-4. The new nodes will appear in the ComfyUI node list under "Ethnic Outfit Generator" and "Ollama Prompter".
+4. The new nodes will appear in the ComfyUI node list under "🌀WizDroid/PromptGen".
 
 ## Usage
 - Use the "Ethnic Outfit Generator" nodes in your workflow.

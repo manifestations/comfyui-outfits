@@ -1,17 +1,62 @@
 [
-    "gelang rotan",
-    "cincin perak",
-    "kalung manik-manik",
-    "anting tradisional",
-    "bros batik",
-    "kalung emas",
-    "gelang gading",
-    "hiasan dada logam",
-    "anting mutiara",
-    "kalung batu alam",
-    "gelang kaki",
-    "hiasan rambut perak",
-    "cincin batu akik",
-    "kalung tulang",
-    "gelang tembaga"
+  {
+    "name": "siger",
+    "part": "head",
+    "description": "A traditional golden crown from Lampung, worn by brides during weddings."
+  },
+  {
+    "name": "kembang goyang",
+    "part": "head",
+    "description": "A delicate floral hairpin with dangling ornaments, often worn in Javanese and Sundanese traditions."
+  },
+  {
+    "name": "tusuk konde",
+    "part": "head",
+    "description": "An ornate hairpin used to secure a bun (konde), common in Javanese bridal hairstyles."
+  },
+  {
+    "name": "gelang kana",
+    "part": "wrist",
+    "description": "A thick, rigid bracelet from Bali, often made of gold or silver with intricate carvings."
+  },
+  {
+    "name": "gelang rantai",
+    "part": "wrist",
+    "description": "A chain-style bracelet, sometimes adorned with charms or gemstones."
+  },
+  {
+    "name": "cincin batu akik",
+    "part": "hand",
+    "description": "A ring set with 'batu akik' (agate stone), believed to have mystical properties."
+  },
+  {
+    "name": "subang",
+    "part": "ears",
+    "description": "Traditional Javanese earrings, often gold with floral or teardrop designs."
+  },
+  {
+    "name": "anting panjang",
+    "part": "ears",
+    "description": "Long, dangling earrings worn in Minangkabau and Malay traditions."
+  },
+  {
+    "name": "kalung pending",
+    "part": "neck",
+    "description": "A choker-style necklace with a central clasp, common in Balinese jewelry."
+  },
+  {
+    "name": "kalung ulu",
+    "part": "neck",
+    "description": "A multi-layered necklace from Sumatra, often made of silver or gold coins."
+  },
+  {
+    "name": "gelang kaki",
+    "part": "ankle",
+    "description": "An anklet worn by dancers in traditional Indonesian performances."
+  },
+  {
+    "name": "ikat pinggang",
+    "part": "waist",
+    "description": "A decorative waistband or belt, often woven with gold or silver thread."
+  }
 ]

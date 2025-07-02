@@ -1,13 +1,37 @@
 [
-  "kundan necklace",
-  "jhumka earrings",
-  "nath",
-  "kamarband",
-  "payal",
-  "sarpesh",
-  "temple jewelry",
-  "choker",
-  "leather bracelet",
-  "diamond ring",
-  "beaded anklet"
+  {"name": "maang tikka", "part": "head", "description": "A decorative piece worn on the hairline, often paired with bridal sets."},
+  {"name": "jhoomar", "part": "head", "description": "A side headpiece that drapes elegantly, popular in Mughal-inspired jewelry."},
+  {"name": "passa", "part": "head", "description": "A traditional head ornament worn on one side, common in South Indian and Rajasthani bridal wear."},
+  
+  {"name": "bangles", "part": "wrist", "description": "Circular ornaments worn in stacks, often made of glass, gold, or lac."},
+  {"name": "kada", "part": "wrist", "description": "A thick, rigid bracelet, sometimes adorned with religious engravings."},
+  {"name": "chooda", "part": "wrist", "description": "A set of ivory or red bangles worn by Punjabi brides for good luck."},
+  
+  {"name": "ring", "part": "hand", "description": "Worn on fingers, often embedded with gemstones or meenakari work."},
+  {"name": "haath phool", "part": "hand", "description": "An intricate hand harness connecting rings to a central wristpiece."},
+  {"name": "arsi (mirror ring)", "part": "hand", "description": "A thumb ring with a small mirror, traditionally worn by brides."},
+  
+  {"name": "anklet", "part": "ankle", "description": "A chain or beaded ornament worn around the ankle, sometimes with bells (payal)."},
+  {"name": "toe ring", "part": "ankle", "description": "Simple or decorated rings worn on toes, symbolizing marital status in many cultures."},
+  {"name": "pajeb", "part": "ankle", "description": "Heavy silver anklets worn in traditional South Indian attire."},
+  
+  {"name": "waist chain", "part": "waist", "description": "A delicate or broad chain worn around the waist, known as 'kamarbandh' or 'oddyanam'."},
+  {"name": "vaddanam", "part": "waist", "description": "A traditional South Indian waist belt, often in gold for brides."},
+  {"name": "kardhani", "part": "waist", "description": "A Rajasthani-style waist ornament with dangling pendants."},
+  
+  {"name": "necklace", "part": "neck", "description": "A generic term for neck ornaments, ranging from chokers to long chains."},
+  {"name": "haar", "part": "neck", "description": "A North Indian-style necklace, often layered for weddings."},
+  {"name": "mangalsutra", "part": "neck", "description": "A sacred black-beaded necklace symbolizing marriage in Hindu culture."},
+  {"name": "choker", "part": "neck", "description": "A tight-fitting necklace, often studded with pearls or polki."},
+  {"name": "rani haar", "part": "neck", "description": "A long, elaborate necklace fit for royalty."},
+  
+  {"name": "earring", "part": "ears", "description": "A common ornament, ranging from small studs to heavy jhumkas."},
+  {"name": "jhumka", "part": "ears", "description": "Bell-shaped earrings with intricate detailing, popular in Indian fashion."},
+  {"name": "karnphool", "part": "ears", "description": "Large circular earrings covering the earlobe, common in Rajasthani attire."},
+  {"name": "lattice earrings (jhumki)", "part": "ears", "description": "Filigree-style earrings with delicate patterns."},
+  
+  {"name": "nose ring", "part": "nose", "description": "A ring or stud worn on the nostril, often with a chain connecting to the ear (nath)."},
+  {"name": "nath", "part": "nose", "description": "A large, ornate nose ring worn by brides, especially in Maharashtrian and Punjabi cultures."},
+  {"name": "bullak", "part": "nose", "description": "A small stud or ring worn on the septum or nostril."},
+  {"name": "phul", "part": "nose", "description": "A delicate floral nose pin, common in everyday wear."}
 ]

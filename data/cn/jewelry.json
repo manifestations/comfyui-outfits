@@ -1,0 +1,32 @@
+[
+    {
+        "name": "phoenix crown (凤冠)",
+        "part": "head",
+        "description": "An elaborate bridal headdress adorned with phoenixes, pearls, and kingfisher feathers."
+    },
+    {
+        "name": "jade bangle (玉镯)",
+        "part": "forearm",
+        "description": "A smooth jade bracelet symbolizing purity and prosperity."
+    },
+    {
+        "name": "hairpin (簪子)",
+        "part": "head",
+        "description": "Decorative pins with dangling ornaments, often made of gold or jade."
+    },
+    {
+        "name": "waist pendant (玉佩)",
+        "part": "waist",
+        "description": "Jade carvings hung from the waist, believed to ward off evil spirits."
+    },
+    {"name": "buyao", "part": "head", "description": "Dangling hair ornament, often with pearls or jade."},
+  {"name": "hairpin (zan)", "part": "head", "description": "Decorative hair stick, sometimes gold or jade."},
+  {"name": "jade bangle", "part": "forearm", "description": "Classic green jade bracelet, symbolizing purity."},
+  {"name": "gold bracelet", "part": "forearm", "description": "Solid gold bangle, often gifted at weddings."},
+  {"name": "finger ring", "part": "hand", "description": "Gold or jade ring, sometimes with carved motifs."},
+  {"name": "anklet", "part": "ankle", "description": "Silver or gold anklet, sometimes with bells."},
+  {"name": "waist pendant (yaopei)", "part": "waist", "description": "Jade or metal pendant hung from the belt."},
+  {"name": "necklace", "part": "neck", "description": "Gold, pearl, or jade necklace."},
+  {"name": "earrings", "part": "ears", "description": "Dangling or stud earrings, often with pearls or jade."},
+  {"name": "nose stud", "part": "nose", "description": "Rare, but sometimes seen in ethnic minorities."}
+]

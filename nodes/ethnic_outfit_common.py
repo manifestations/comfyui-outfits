@@ -89,6 +89,20 @@ class EthnicOutfitGenerator:
             except Exception:
                 pass
             return options
+        def load_jewelry_options(part):
+            # Loads jewelry.json and filters by part
+            region_code = getattr(cls, 'region_code', None)
+            data_dir = os.path.join(os.path.dirname(__file__), "..", "data", region_code)
+            options = ["random", "disabled"]
+            try:
+                with open(os.path.join(data_dir, 'jewelry.json'), 'r', encoding='utf-8') as f:
+                    loaded = json.load(f)
+                    if isinstance(loaded, list):
+                        filtered = [j["name"] for j in loaded if isinstance(j, dict) and j.get("part") == part]
+                        options += filtered
+            except Exception:
+                pass
+            return options
         return {
             "required": {
                 # Gender and age on top (no 'disabled')
@@ -99,8 +113,13 @@ class EthnicOutfitGenerator:
                 "head_gear": (load_options('head_gear', add_disabled=True), {"default": "random"}),
                 "torso_clothing": (load_options('torso_clothing', add_disabled=False), {"default": "random"}),
                 "arm_clothing": (load_options('arm_clothing', add_disabled=True), {"default": "random"}),
-                "hand_accessories": (load_options('hand_accessories', add_disabled=True), {"default": "random"}),
-                "jewelry": (load_options('jewelry', add_disabled=True), {"default": "random"}),
+                "jewelry_head": (load_jewelry_options('head'), {"default": "random"}),
+                "jewelry_wrist": (load_jewelry_options('wrist'), {"default": "random"}),
+                "jewelry_hand": (load_jewelry_options('hand'), {"default": "random"}),
+                "jewelry_ankle": (load_jewelry_options('ankle'), {"default": "random"}),
+                "jewelry_waist": (load_jewelry_options('waist'), {"default": "random"}),
+                "jewelry_ears": (load_jewelry_options('ears'), {"default": "random"}),
+                "jewelry_nose": (load_jewelry_options('nose'), {"default": "random"}),
                 "fabric_colors": (load_options('fabric_colors', add_disabled=True), {"default": "random"}),
                 "leg_clothing": (load_options('leg_clothing', add_disabled=True), {"default": "random"}),
                 "footwear": (load_options('footwear', add_disabled=True), {"default": "random"}),
@@ -132,9 +151,18 @@ class EthnicOutfitGenerator:
         chest_clothing = self.get_choice(getval("chest_clothing", ""), self.data.get("chest_clothing", []))
         leg_clothing = self.get_choice(getval("leg_clothing", ""), self.data.get("leg_clothing", []))
         arm_clothing = self.get_choice(getval("arm_clothing", ""), self.data.get("arm_clothing", []))
-        jewelry = self.get_choice(getval("jewelry", ""), self.data.get("jewelry", []))
+        def get_jewelry_choice(key, part):
+            # Only use jewelry for the correct part
+            options = [j["name"] for j in self.data.get("jewelry", []) if isinstance(j, dict) and j.get("part") == part]
+            return self.get_choice(kwargs.get(key, ""), options)
+        jewelry_head = get_jewelry_choice("jewelry_head", "head")
+        jewelry_wrist = get_jewelry_choice("jewelry_wrist", "wrist")
+        jewelry_hand = get_jewelry_choice("jewelry_hand", "hand")
+        jewelry_ankle = get_jewelry_choice("jewelry_ankle", "ankle")
+        jewelry_waist = get_jewelry_choice("jewelry_waist", "waist")
+        jewelry_ears = get_jewelry_choice("jewelry_ears", "ears")
+        jewelry_nose = get_jewelry_choice("jewelry_nose", "nose")
         footwear = self.get_choice(getval("footwear", ""), self.data.get("footwear", []))
-        hand_accessories = self.get_choice(getval("hand_accessories", ""), self.data.get("hand_accessories", []))
         fabric_colors = self.get_choice(getval("fabric_colors", ""), self.data.get("fabric_colors", []))
         torso_clothing = self.get_choice(getval("torso_clothing", ""), self.data.get("torso_clothing", []))
         hair_style = self.get_choice(getval("hair_style", ""), self.data.get("hair_styles", []))
@@ -176,12 +204,27 @@ class EthnicOutfitGenerator:
         if head_gear:
             components.append(", wearing ")
             components.append(head_gear)
-        if jewelry:
-            components.append(", adorned with ")
-            components.append(jewelry)
-        if hand_accessories:
-            components.append(", featuring ")
-            components.append(hand_accessories)
+        if jewelry_head:
+            components.append(", head jewelry: ")
+            components.append(jewelry_head)
+        if jewelry_wrist:
+            components.append(", wrist jewelry: ")
+            components.append(jewelry_wrist)
+        if jewelry_hand:
+            components.append(", hand jewelry: ")
+            components.append(jewelry_hand)
+        if jewelry_ankle:
+            components.append(", ankle jewelry: ")
+            components.append(jewelry_ankle)
+        if jewelry_waist:
+            components.append(", waist/navel jewelry: ")
+            components.append(jewelry_waist)
+        if jewelry_ears:
+            components.append(", earrings: ")
+            components.append(jewelry_ears)
+        if jewelry_nose:
+            components.append(", nose jewelry: ")
+            components.append(jewelry_nose)
         if hair_style:
             components.append(f", hairstyle: {hair_style}")
         if footwear:

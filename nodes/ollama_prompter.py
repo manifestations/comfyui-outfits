@@ -55,10 +55,12 @@ class OllamaPrompter:
     @staticmethod
     def load_prompt_instructions(style):
         prompts_dir = os.path.join(os.path.dirname(__file__), '..', 'data', 'prompts')
-        filename = {
-            'SDXL': 'sdxl.json',
-            'Flux': 'flux.json',
-        }.get(style.upper() if style else '', None)
+        # Use case-insensitive matching for style keys
+        style_map = {
+            'sdxl': 'sdxl.json',
+            'flux': 'flux.json',
+        }
+        filename = style_map.get(style.lower() if style else '', None)
         if not filename:
             return None
         path = os.path.join(prompts_dir, filename)

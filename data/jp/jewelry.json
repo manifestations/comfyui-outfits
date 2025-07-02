@@ -1,8 +1,57 @@
 [
-    "kanzashi hairpin",
-    "obidome brooch",
-    "netsuke toggle",
-    "magatama bead",
-    "kumihimo bracelet",
-    "jade ring"
+  {
+    "name": "kanzashi",
+    "part": "head",
+    "description": "Decorative hairpins made of lacquer, silk, or metal, worn in traditional hairstyles."
+  },
+  {
+    "name": "tsumami kanzashi",
+    "part": "head",
+    "description": "A type of kanzashi with folded fabric flowers, often seasonal in design."
+  },
+  {
+    "name": "kushi",
+    "part": "head",
+    "description": "A comb, sometimes elaborately decorated, used in geisha and bridal hairstyles."
+  },
+  {
+    "name": "wagara obidome",
+    "part": "waist",
+    "description": "A small ornament attached to the obi (kimono sash), often with traditional patterns."
+  },
+  {
+    "name": "obi dome",
+    "part": "waist",
+    "description": "A decorative toggle worn over the obi, made of jade, lacquer, or metal."
+  },
+  {
+    "name": "mizuhiki cord jewelry",
+    "part": "neck",
+    "description": "Necklaces or bracelets made from intricately knotted mizuhiki cords."
+  },
+  {
+    "name": "magatama necklace",
+    "part": "neck",
+    "description": "A necklace with comma-shaped beads (magatama), symbolizing spirituality."
+  },
+  {
+    "name": "shakudo earrings",
+    "part": "ears",
+    "description": "Earrings made of shakudo (a gold-copper alloy), often with nature motifs."
+  },
+  {
+    "name": "mimikakushi",
+    "part": "ears",
+    "description": "Literally 'ear-hiders,' decorative ear covers worn in some traditional performances."
+  },
+  {
+    "name": "yagō-dōgu (jewelry for tea ceremony)",
+    "part": "hand",
+    "description": "Subtle rings or bracelets worn during tea ceremonies, often understated."
+  },
+  {
+    "name": "netsuke",
+    "part": "waist",
+    "description": "A miniature sculpture used to fasten pouches to kimono sashes (historically functional, now decorative)."
+  }
 ]
