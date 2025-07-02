@@ -1,0 +1,4 @@
+# Requirements for comfyui-indian-outfit custom nodes
+requests
+numpy
+Pillow
